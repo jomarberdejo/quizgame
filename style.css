@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('https://raw.githubusercontent.com/jomarberdejo/quizgame/main/background.jpg'), linear-gradient(blue, yellow);
+    background-image: url('background.jpg'), linear-gradient(blue, yellow);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
