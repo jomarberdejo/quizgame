@@ -122,6 +122,7 @@ function displayQuestion3() {
             document.getElementById('score').innerHTML= "Your Score: "+ score;
             checkScore();
             document.getElementById('paragraph3').innerHTML= "3. Ruby is a server-side scripting language similar to Python and PERL. Also, can be used to write Common Gateway Interface (CGI) scripts."
+            document.getElementById('paragraphs').style.display= "block";
         }
         else if (answer3 == null || answer3== ""){
          alert("You didn't answer the question!")
