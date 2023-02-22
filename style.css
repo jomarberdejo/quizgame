@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: Georgia;
+    background-image: url('https://raw.githubusercontent.com/jomarberdejo/quizgame/main/background.jpg'),
+    linear-gradient(blue, yellow);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    
+}
+h1, h2, h3{
+    color: white;
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: inherit;
+}
+h1{
+  margin-top: 1rem;
+}
+.intro-span{
+  color: white;
+}
+
+h2{
+    color: green;
+    margin-top: 3rem;
+}
+.start-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+#start-container{
+  display: flex;
+}
+
+#start{
+  width: max-content;
+  font-size: 90px;
+  cursor: pointer;
+  background-color: blue;
+  border-radius:15px;
+  border:none;
+  color: white;
+  padding: 8px;
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+.start-image img{
+  width: 90px;
+  height: 90px;
+  bottom: 0px;
+}
+
+#start:hover{
+  box-shadow: 5px 10px 20px yellow;
+}
+
+.buttons button{
+   padding:1 9;
+    font-size: 2rem;
+    margin: 2rem;
+    width: max-content;
+    border:none ;
+    border-radius: 8px;
+    background-color: #333;
+    color:white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.buttons button:hover{
+  background-color: #FFFFFF99;
+  color: black;
+}
+
+
+
+.question-type{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#q1-check img, #q2-check img, #q3-check img{
+    width: 28px;
+    height: 28px;
+}
+#q1-check, #q2-check, #q3-check{
+    display: none;
+
+}
+
+.quiz-score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+
+}
+.quiz-score p{
+  color: white;
+  font-size: 30px;
+  padding: 8px;
+  background-color: black;
+  width: max-content;
+  border-radius: 7px;
+  font-family: Georgia;
+}
+
+#intro, #quiz-score, #question-type{
+  display: none;
+}
+
+#paragraphs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin: 4% 10%;
+
+}
+#paragraphs p{
+  text-align: left;
+  color: white;
+  font-size: 27px;
+  margin-bottom: 15px;
+  font-family: Georgia;
+}
+
+#social-icons{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+  display: none;
+  
+}
+#social-icons img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+  .start-container{
+    margin-top: 30%;
+    }
+
+  #start{
+    font-size: 30px;
+
+  }
+  .start-image img{
+    width: 40px;
+    height:40px;
+  }
+  
+  h1, h2, h3{
+    font-size: 3rem;
+  }
+  
+  #social-icons img{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  
+}
